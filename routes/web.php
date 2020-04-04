@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@dashboard')->name('trang-chu');
+Route::get('profile', 'HomeController@profile');
+Route::get('index', 'HomeController@index')->name('trang-chu');
+
+
